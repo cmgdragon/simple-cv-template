@@ -5,15 +5,13 @@
   box-shadow: 3px 3px 0 4px $color-sombra;
   background-color: $color-fondo-resalte;
 
+  @media (max-width: 675px) {
+    margin: 4rem 0;
+  }
+
   .cv-seccion__separador {
     height: 1px;
     margin: 1rem 0;
     background: linear-gradient(90deg, $color-fondo, $color-sombra 50%, $color-fondo);
-  }
-}
-
-@media (max-width: 675px) {
-  .cv-seccion {
-    margin: 4rem 0;
   }
 }
