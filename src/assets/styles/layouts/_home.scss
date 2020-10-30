@@ -6,6 +6,7 @@ body {
 
 .apartados {
   @include texto-grande;
+
   display: flex;
   justify-content: center;
 }

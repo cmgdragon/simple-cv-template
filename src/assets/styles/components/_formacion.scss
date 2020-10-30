@@ -1,21 +1,23 @@
 .formacion {
-    display: flex; /* flex */
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+
+  .formacion__titulo {
+    @include texto-grande;
+
     margin: 1rem 0;
+  }
 
-    .formacion__titulo {
-        @include texto-grande;
-        margin: 1rem 0;
-    }
+  .formacion__centro {
+    @include texto-mediano;
 
-    .formacion__centro {
-        @include texto-mediano;
-        margin: 1rem 0;
-    }
+    margin: 1rem 0;
+  }
 
-    .formacion__periodo {
-        @include texto-pequeño;
-        margin: 1rem 0;
-    }
+  .formacion__periodo {
+    @include texto-pequeño;
 
+    margin: 1rem 0;
+  }
 }

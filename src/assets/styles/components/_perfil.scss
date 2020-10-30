@@ -1,84 +1,70 @@
 .perfil {
+  .perfil__imagen {
+    background-image: url("../images/user.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 10rem;
+    margin: 2rem 0;
+  }
 
-   /* display: none; */
+  .perfil__contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .perfil__imagen {
-        background-image: url("../images/user.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        height: 10rem;
-        margin: 2rem 0;
+    .perfil__item {
+      margin: 1rem 0;
     }
 
-    .perfil__contacto {
+    .perfil__nombre {
+      @include texto-grande;
+    }
+
+    .perfil__profesion {
+      @include texto-tamaño(2.5rem);
+    }
+
+    .perfil__email {
+      @include texto-tamaño(2rem);
+    }
+
+    .perfil__redes-sociales {
+      i {
+        margin: 0 1rem;
+        font-size: 1.8rem;
+
+        &:hover {
+          cursor: pointer;
+          color: darkred;
+        }
+      }
+    }
+
+    .perfil__quote {
+      font-weight: 300;
+      font-size: 1.5rem;
+    }
+
+    .perfil-idiomas {
+      margin: 2rem 0;
+
+      .perfil-idiomas__label {
+        font-weight: 300;
+        font-size: 2rem;
+      }
+
+      .perfil-idiomas__list {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        list-style-type: none;
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
 
-
-        .perfil__item {
-            margin: 1rem 0;
+        .perfil-idiomas__idioma {
+          margin: 0 1rem;
         }
-
-
-        .perfil__nombre {
-            @include texto-grande;
-        }
-
-        .perfil__profesion {
-            @include texto-tamaño(2.5rem)
-        }
-
-        .perfil__email {
-            @include texto-tamaño(2rem)
-        }
-
-        .perfil__redes-sociales {
-
-            i {
-                margin: 0 1rem;
-                font-size: 1.8rem;
-
-                &:hover {
-                    cursor: pointer;
-                    color: darkred;
-                }
-
-            }
-
-        }
-
-        .perfil__quote {
-            font-weight: 300;
-            font-size: 1.5rem;
-        }
-
-        .perfil-idiomas {
-
-            margin: 2rem 0;
-
-            .perfil-idiomas__label {
-                font-weight: 300;
-                font-size: 2rem;
-            }
-
-            .perfil-idiomas__list {
-
-                display: flex;
-                list-style-type: none;
-                padding: 0;
-                flex-wrap: wrap;
-                justify-content: center;
-
-                .perfil-idiomas__idioma {
-                    margin: 0 1rem;
-                }
-
-            }
-
-        }
-
+      }
     }
-
+  }
 }

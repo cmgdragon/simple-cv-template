@@ -1,19 +1,19 @@
 @mixin texto-grande {
-    font-weight: 300;
-    font-size: 3rem;
+  font-weight: 300;
+  font-size: 3rem;
 }
 
 @mixin texto-mediano {
-    font-weight: 300;
-    font-size: 1.9rem;
+  font-weight: 300;
+  font-size: 1.9rem;
 }
 
 @mixin texto-pequeño {
-    font-weight: 300;
-    font-size: 1.1rem;
+  font-weight: 300;
+  font-size: 1.1rem;
 }
 
 @mixin texto-tamaño($tamaño) {
-    font-weight: 300;
-    font-size: $tamaño;
+  font-weight: 300;
+  font-size: $tamaño;
 }

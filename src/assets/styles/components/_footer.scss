@@ -1,35 +1,36 @@
 .footer {
+  position: static;
+  margin-top: 6rem;
+  padding: 1rem 0;
+  bottom: 0;
+  background-color: $color-fondo-resalte;
+  box-shadow: 1px 1px 0 4px $color-sombra;
+  display: flex;
+  justify-content: space-evenly;
 
-    position: static;
-    margin-top: 6rem;
-    padding: 1rem 0;
-    bottom: 0;
-    background-color: $color-fondo-resalte;
-    box-shadow: 1px 1px 0px 4px $color-sombra;
+  .footer__item {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    .footer__item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    a {
+      &:link,
+      &:visited,
+      &:active {
+        text-decoration: unset;
+        color: unset;
+      }
 
-        a, a:link, a:visited, a:active {
-            text-decoration: unset;
-            color: unset;
-
-            &:hover {
-                cursor: pointer;
-                border-bottom: 2px solid black;
-            }
-
-        }
-
-        a, span {
-            margin: .5rem 0;
-        }
-
+      &:hover {
+        cursor: pointer;
+        border-bottom: 2px solid black;
+      }
     }
 
+    a,
+    span {
+      margin: 0.5rem 0;
+    }
+  }
 }

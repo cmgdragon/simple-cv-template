@@ -1,20 +1,18 @@
 .cabecera {
-    width: 100%;
-    position: static;
-    transition: all .5s;
-    padding: 4rem 0 1rem 0;
-    background-color: $color-fondo;
+  width: 100%;
+  position: static;
+  transition: all 0.5s;
+  padding: 4rem 0 1rem 0;
+  background-color: $color-fondo;
 
-    &.sticky {
-        box-shadow: 0px 1px 0 1px rgba(0,0,0,0.67843);
-        position: sticky;
-        top: 0;
-        padding: 0;
+  &.sticky {
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.67843);
+    position: sticky;
+    top: 0;
+    padding: 0;
 
-        &:hover {
-            box-shadow: unset;
-        }
-
+    &:hover {
+      box-shadow: unset;
     }
-
+  }
 }
