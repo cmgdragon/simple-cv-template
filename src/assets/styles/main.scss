@@ -1,0 +1,20 @@
+/* Variables */
+@import "variables";
+
+/* Normalize */
+@import "normalize.css";
+
+/* Mixins */
+@import "mixins/text-sizes";
+
+/* Layout */
+@import "layouts/home";
+
+/* Componentes */
+@import "components/perfil";
+@import "components/cabecera";
+@import "components/menu";
+@import "components/proyectos";
+@import "components/cv-seccion";
+@import "components/formacion";
+@import "components/footer";

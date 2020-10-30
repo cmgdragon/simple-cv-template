@@ -1,0 +1,160 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <script src="https://kit.fontawesome.com/bbc3c21183.js" crossorigin="anonymous"></script>
+  <title>My CV</title>
+</head>
+
+<body id="top">
+
+  <header id="cabecera" class="cabecera">
+    <nav class="menu">
+      <ul class="menu__secciones">
+        <li class="menu__seccion" data-menu="perfil"><a href="#top"><i class="fa fa-user"
+              aria-hidden="true"></i>Perfil</a></li>
+        <li class="menu__seccion" data-menu="formacion"><a href="#formacion"><i class="fa fa-graduation-cap"
+              aria-hidden="true"></i>Formación</a></li>
+        <li class="menu__seccion" data-menu="proyectos"><a href="#proyectos"><i class="fa fa-briefcase"
+              aria-hidden="true"></i>Proyectos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="cv-seccion perfil">
+
+    <div class="perfil__imagen"></div>
+
+    <div class="perfil__contacto">
+
+      <div class="perfil__item perfil__nombre">Nombre Apellidos</div>
+
+      <div class="perfil__item perfil__profesion">Desarrollador web</div>
+
+      <div class="perfil__item perfil__email"><i class="fa fa-envelope" aria-hidden="true"></i> email@website.com</div>
+
+      <div class="perfil-idiomas">
+
+        <span class="perfil-idiomas__label">Idiomas</span>
+        <ul class="perfil-idiomas__list">
+          <li class="perfil-idiomas__idioma">Español</li>
+          <li class="perfil-idiomas__idioma">Catalán</li>
+          <li class="perfil-idiomas__idioma">Inglés</li>
+        </ul>
+
+      </div>
+
+      <div class="perfil__item perfil__redes-sociales">
+
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-github" aria-hidden="true"></i>
+
+      </div>
+
+      <q class="perfil__item perfil__quote">– Lorem Ipsum</q>
+
+    </div>
+
+  </section>
+
+  <h2 id="formacion" class="apartados">Formación</h2>
+
+  <section class="cv-seccion">
+
+    <article class="formacion">
+
+      <span class="formacion__titulo">Graduado en Información y documentación</span>
+      <span class="formacion__centro">Universitat de Barcelona</span>
+      <span class="formacion__periodo">2015-2019</span>
+
+    </article>
+
+    <div class="cv-seccion__separador"></div>
+
+    <article class="formacion">
+
+      <span class="formacion__titulo">Máster de Desarrollo de aplicaciones y sitios web</span>
+      <span class="formacion__centro">Universitat Oberta de Catalunya</span>
+      <span class="formacion__periodo">2019-</span>
+
+    </article>
+
+  </section>
+
+  <h2 id="proyectos" class="apartados">Proyectos</a></h2>
+
+  <section class="cv-seccion">
+
+    <article class="proyectos">
+
+      <div class="proyectos__header">
+
+        <a target="_blank" href="https://udiet.page/"><img src="assets/images/proyectos/udiet.png" alt="Proyecto"
+            class="proyectos__imagen"></a>
+        <a target="_blank" href="https://udiet.page/"><span class="proyectos__titulo">uDiet (2020)</span></a>
+
+      </div>
+
+      <span class="proyectos__label-stack">Desarrollado con</span>
+
+      <div class="proyectos__stack">
+
+        <img class="proyectos__imagen-tecnologia" src="assets/images/proyectos/react.png" alt="React">
+        <img class="proyectos__imagen-tecnologia" src="assets/images/proyectos/firebase.png" alt="Firebase">
+
+      </div>
+
+    </article>
+
+    <div class="cv-seccion__separador"></div>
+
+    <article class="proyectos">
+
+      <div class="proyectos__header">
+
+        <a target="_blank" href="https://www.you-tales.com/"><img src="assets/images/proyectos/youtales.png"
+            alt="Proyecto" class="proyectos__imagen"></a>
+        <a target="_blank" href="https://www.you-tales.com/"><span class="proyectos__titulo">Youtales (2018)</span></a>
+
+      </div>
+
+      <span class="proyectos__label-stack">Desarrollado con</span>
+
+      <div class="proyectos__stack">
+
+        <img class="proyectos__imagen-tecnologia" src="assets/images/proyectos/php.png" alt="PHP">
+        <img class="proyectos__imagen-tecnologia" src="assets/images/proyectos/apache.png" alt="Apache">
+        <img class="proyectos__imagen-tecnologia" src="assets/images/proyectos/mysql.png" alt="MySQL">
+
+      </div>
+
+    </article>
+
+  </section>
+
+  <footer class="footer">
+
+    <div class="footer__item">
+      <span>Herramientas HTML y CSS II</span>
+      <span>PEC 1</span>
+    </div>
+
+    <div class="footer__item">
+      <a href="#top">Perfil</a>
+      <a href="#formacion">Formación</a>
+      <a href="#proyectos">Proyectos</a>
+    </div>
+
+  </footer>
+
+  <script src="./assets/scripts/main.js"></script>
+</body>
+
+</html>

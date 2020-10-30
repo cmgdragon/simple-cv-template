@@ -1,0 +1,11 @@
+body {
+  font-family: $font-family-sans-serif;
+  color: $color-texto;
+  background-color: $color-fondo;
+}
+
+.apartados {
+  @include texto-grande;
+  display: flex;
+  justify-content: center;
+}
