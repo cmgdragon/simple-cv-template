@@ -5,9 +5,9 @@
   padding: 4rem 0 1rem 0;
   background-color: $color-fondo;
 
-  &.sticky {
+  &.fixed {
     box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.67843);
-    position: sticky;
+    position: fixed;
     top: 0;
     padding: 0;
 

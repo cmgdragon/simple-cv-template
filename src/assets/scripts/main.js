@@ -1,17 +1,16 @@
-window.addEventListener('scroll', () => {
+const cabecera = document.getElementById('cabecera');
+const cabeceraOffset = cabecera.offsetTop;
 
-  const cabecera = document.getElementById('cabecera');
-
-  if (window.scrollY > 100) {
-    cabecera.classList.add('sticky')
-    return
-  } else if (window.scrollY < 100 - 20) {
-    cabecera.classList.remove('sticky')
-    return
+moverCabeceraConScroll = () => {
+  if (window.pageYOffset > cabeceraOffset) {
+    cabecera.classList.add("fixed");
+  } else {
+    cabecera.classList.remove("fixed");
   }
-
-})
+};
 
 document.querySelectorAll('[data-menu]').forEach(menu => {
   menu.addEventListener('click', () => menu.firstChild.click())
 })
+
+window.addEventListener('scroll', moverCabeceraConScroll);
